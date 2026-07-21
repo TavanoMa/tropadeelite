@@ -6,6 +6,7 @@ export interface Character {
   nickname?: string
   rank?: string
   role: string
+  category: 'protagonista' | 'coadjuvante' | 'antagonista'
   shortBio: string
   fullBio: string
   history: string

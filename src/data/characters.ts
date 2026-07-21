@@ -8,6 +8,7 @@ export const characters: Character[] = [
     actorSlug: 'wagner-moura',
     rank: 'Capitão',
     role: 'Protagonista e narrador',
+    category: 'protagonista',
     shortBio:
       'Capitão do BOPE obcecado com a missão de pacificar as favelas do Rio de Janeiro antes da visita do Papa. Dividido entre a brutalidade necessária do trabalho e os conflitos pessoais que ameaçam destruir sua família.',
     fullBio: `Roberto Nascimento é o capitão do Batalhão de Operações Policiais Especiais (BOPE), a unidade de elite da Polícia Militar do Rio de Janeiro. Veterano de inúmeras operações em favelas dominadas pelo tráfico de drogas, Nascimento carrega o peso de uma missão que parece impossível: combater o crime organizado em um sistema corrompido.
@@ -113,6 +114,7 @@ Nascimento também é importante por desafiar o maniqueísmo. Ele não é herói
     actor: 'André Ramiro',
     actorSlug: 'andre-ramiro',
     role: 'Protagonista',
+    category: 'protagonista',
     shortBio:
       'Policial e estudante de Direito que tenta conciliar dois mundos completamente opostos. Matias é o personagem que melhor representa o conflito entre ideologia e realidade.',
     fullBio: `André Matias é um jovem policial militar que, paralelamente à carreira na polícia, cursa Direito em uma universidade pública. Inteligente, observador e estratégico, Matias vive uma dupla vida que se torna cada vez mais insustentável.
@@ -183,6 +185,13 @@ O personagem é fundamental para dar ao filme sua dimensão intelectual e filos�
         description:
           'Nascimento reconhece em Matias as qualidades necessárias para liderar o BOPE. A relação mentor-pupilo define o destino de ambos.',
       },
+      {
+        character: 'Maria',
+        characterSlug: 'maria',
+        type: 'Interesse amoroso',
+        description:
+          'Maria representa o mundo universitário de Matias. Sua relação expõe o conflito entre os dois mundos que ele tenta habitar.',
+      },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
     imageUrl: '/images/characters/matias.jpg',
@@ -194,6 +203,7 @@ O personagem é fundamental para dar ao filme sua dimensão intelectual e filos�
     actor: 'Caio Junqueira',
     actorSlug: 'caio-junqueira',
     role: 'Protagonista',
+    category: 'protagonista',
     shortBio:
       'Policial corajoso e idealista, melhor amigo de Matias. Neto representa a bravura impulsiva e o idealismo que o sistema acaba destruindo.',
     fullBio: `Neto é um jovem policial militar movido por um idealismo feroz e uma coragem que beira a imprudência. Junto com seu melhor amigo André Matias, ele ingressa no BOPE determinado a fazer a diferença no combate ao crime organizado no Rio de Janeiro.
@@ -266,18 +276,153 @@ Caio Junqueira, que interpretou Neto, faleceu em 2019 em um acidente de carro no
         description:
           'Neto admira Nascimento pela coragem e integridade, vendo nele o modelo de policial que deseja se tornar.',
       },
+      {
+        character: 'Maria',
+        characterSlug: 'maria',
+        type: 'Namorada',
+        description:
+          'Maria é a namorada de Neto. A relação entre eles representa a humanidade e a ternura que existem por trás da vida policial violenta.',
+      },
     ],
     films: ['Tropa de Elite (2007)'],
     imageUrl: '/images/characters/neto.jpg',
     imageAlt: 'Neto interpretado por Caio Junqueira em Tropa de Elite',
   },
   {
+    id: 'maria',
+    name: 'Maria',
+    actor: 'Fernanda Machado',
+    actorSlug: 'fernanda-machado',
+    role: 'Coadjuvante — namorada de Neto e amiga de Matias',
+    category: 'coadjuvante',
+    shortBio:
+      'Estudante universitária, namorada de Neto e ligação entre o mundo da universidade e o mundo policial. Maria é a ponte entre dois universos que se chocam violentamente no filme.',
+    fullBio: `Maria é uma jovem estudante universitária que se torna a ligação emocional entre o mundo civil e o mundo policial em Tropa de Elite. Namorada de Neto e próxima de Matias no ambiente da faculdade, Maria representa a perspectiva de quem vive fora da guerra urbana mas é diretamente afetada por ela.
+
+Na universidade, Maria faz parte do círculo de estudantes de classe média que frequentam as aulas de Direito junto com Matias. Ela é sensível, inteligente e genuinamente preocupada com questões sociais — mas sua visão de mundo é inevitavelmente limitada pela distância que a separa da realidade das favelas e do cotidiano policial.
+
+O relacionamento de Maria com Neto coloca em evidência o contraste entre o idealismo acadêmico e a brutalidade prática do combate ao crime. Enquanto Maria discute teorias sobre justiça social na universidade, Neto arrisca a vida enfrentando traficantes armados nas vielas das favelas.
+
+Maria também funciona como uma ponte narrativa entre Matias e o mundo universitário. É através dela que parte da tensão entre a vida dupla de Matias se manifesta, já que Maria conhece ambos os lados de sua existência.
+
+A presença de Maria no filme humaniza os protagonistas masculinos. Ela mostra que por trás dos policiais endurecidos existem homens com vínculos afetivos, medos e vulnerabilidades que o uniforme não consegue esconder.
+
+Sua trajetória no filme acompanha a escalada de violência: à medida que os eventos se tornam mais dramáticos, Maria é forçada a confrontar a realidade de que as pessoas que ama vivem constantemente entre a vida e a morte.`,
+    history: `Maria aparece no filme principalmente nos cenários universitários e nos momentos de intimidade com Neto. Ela é apresentada como uma jovem alegre e engajada, que contrasta com a atmosfera sombria e violenta do restante da trama.
+
+Na universidade, Maria convive com estudantes que romantizam a favela e consomem drogas de forma recreativa, sem perceber as consequências sociais de seus atos. Ela ocupa uma posição intermediária: não é tão ingênua quanto alguns de seus colegas, mas também não compreende plenamente a realidade que Neto e Matias enfrentam.
+
+À medida que a trama avança, Maria se torna cada vez mais consciente dos riscos que Neto corre. As despedidas antes das operações, as ligações que podem ser as últimas, a constante incerteza — tudo isso pesa sobre o relacionamento.
+
+Os eventos trágicos do filme atingem Maria de forma devastadora, transformando-a de observadora periférica em vítima direta da violência que permeia toda a narrativa.`,
+    importance: `Maria é fundamental para o equilíbrio emocional de Tropa de Elite. Sem ela, o filme seria uma sequência ininterrupta de ação e tensão sem pausas para a humanidade dos personagens respirar.
+
+Ela representa o público — alguém de fora do mundo policial que tenta entender e conviver com uma realidade que não escolheu. Através de Maria, o espectador se conecta emocionalmente com os protagonistas de uma forma que a narrativa em primeira pessoa de Nascimento, por si só, não permitiria.
+
+O personagem também é importante para a crítica social do filme. Maria faz parte do meio universitário que o filme questiona — a classe média que consome drogas e critica a polícia sem se dar conta de sua própria contradição. No entanto, diferente de outros personagens desse universo, Maria demonstra empatia genuína e capacidade de enxergar além dos estereótipos.
+
+Fernanda Machado trouxe ao papel uma sensibilidade que torna Maria memorável apesar de seu tempo de tela relativamente limitado em comparação com os protagonistas masculinos.`,
+    traits: [
+      'Sensível',
+      'Empática',
+      'Corajosa',
+      'Idealista',
+      'Afetuosa',
+      'Perceptiva',
+    ],
+    quotes: [],
+    curiosities: [
+      'Fernanda Machado é uma atriz brasileira que também fez carreira em Hollywood, atuando em séries americanas.',
+      'O papel de Maria, embora coadjuvante, foi essencial para dar dimensão emocional ao filme.',
+      'As cenas entre Maria e Neto foram algumas das poucas do filme que mostram leveza e ternura.',
+      'A relação Maria-Neto-Matias forma um triângulo emocional que permeia toda a narrativa.',
+    ],
+    relationships: [
+      {
+        character: 'Neto',
+        characterSlug: 'neto',
+        type: 'Namorado',
+        description:
+          'Maria e Neto vivem um relacionamento amoroso que humaniza o personagem e contrasta com a violência de sua rotina.',
+      },
+      {
+        character: 'André Matias',
+        characterSlug: 'matias',
+        type: 'Amiga / colega de universidade',
+        description:
+          'Maria conhece Matias da faculdade e é uma das poucas pessoas que transita entre os dois mundos que ele habita.',
+      },
+    ],
+    films: ['Tropa de Elite (2007)'],
+    imageUrl: '/images/characters/maria.jpg',
+    imageAlt: 'Maria interpretada por Fernanda Machado em Tropa de Elite',
+  },
+  {
+    id: 'rosane',
+    name: 'Rosane',
+    actor: 'Maria Ribeiro',
+    actorSlug: 'maria-ribeiro',
+    role: 'Coadjuvante — esposa do Capitão Nascimento',
+    category: 'coadjuvante',
+    shortBio:
+      'Esposa do Capitão Nascimento, grávida e pressionando o marido a deixar o BOPE. Rosane representa o custo pessoal e familiar da vida policial.',
+    fullBio: `Rosane é a esposa do Capitão Nascimento e uma das personagens mais importantes para compreender a dimensão humana do protagonista. Grávida do primeiro filho do casal, ela exige que Nascimento deixe o BOPE — um pedido que funciona como motor de toda a trama do filme.
+
+Rosane não é uma personagem passiva. Ela é articulada, firme e não tem medo de confrontar o marido, mesmo sabendo quem ele é dentro do batalhão. Para ela, a vida do filho e a integridade da família são prioridades absolutas que deveriam se sobrepor a qualquer missão.
+
+O conflito entre Rosane e Nascimento é, em essência, o conflito entre a vida pessoal e a vida profissional levado ao extremo. Nascimento sabe que sua esposa tem razão — que o BOPE está destruindo sua saúde mental e seu casamento — mas é incapaz de abandonar a missão enquanto não encontrar um substituto digno.
+
+Rosane oferece ao espectador uma perspectiva raramente mostrada em filmes policiais: a da família que espera em casa. Ela vive com o medo constante de que cada operação pode ser a última, de que cada telefonema pode trazer a notícia que toda esposa de policial teme.
+
+A atuação de Maria Ribeiro confere a Rosane uma dignidade e uma força que vão além do papel tradicional de "esposa preocupada". Rosane é uma mulher que faz escolhas e impõe limites, ainda que esses limites sejam constantemente testados pela obsessão do marido com o trabalho.`,
+    history: `Rosane aparece ao longo do filme em momentos-chave que ilustram a deterioração do casamento com Nascimento. As discussões entre eles se intensificam à medida que a missão de pacificar a favela se torna mais urgente e perigosa.
+
+A gravidez de Rosane adiciona uma camada de urgência à trama. O nascimento do filho representa não apenas uma nova vida, mas um ultimato: ou Nascimento muda, ou perde sua família.
+
+As cenas domésticas entre Rosane e Nascimento contrastam radicalmente com as cenas de operação policial. No quartel, Nascimento é o comandante inabalável. Em casa, é um marido que não sabe se comunicar, que traz para dentro de casa a tensão que deveria ficar no batalhão.
+
+O desfecho do filme afeta Rosane diretamente, e sua reação reflete o custo real que a violência policial cobra não apenas dos profissionais, mas de suas famílias inteiras.`,
+    importance: `Rosane é essencial porque representa o preço pessoal da guerra contra o crime. Sem ela, Nascimento seria apenas um policial em missão. Com ela, ele é um homem dividido entre dois deveres — e é essa divisão que torna o personagem tridimensional.
+
+O casamento em crise de Nascimento e Rosane funciona como uma metáfora da própria sociedade brasileira: dividida entre a necessidade de segurança e o custo humano de obtê-la.
+
+Maria Ribeiro, uma das atrizes mais talentosas de sua geração, trouxe ao papel uma autenticidade que eleva todas as cenas domésticas do filme. Sua Rosane não é um acessório narrativo — é uma personagem com voz, vontade e importância próprias.`,
+    traits: [
+      'Determinada',
+      'Protetora',
+      'Articulada',
+      'Confrontadora',
+      'Amorosa',
+      'Resiliente',
+    ],
+    quotes: [],
+    curiosities: [
+      'Maria Ribeiro é uma das atrizes mais premiadas do cinema e teatro brasileiro.',
+      'As cenas entre Rosane e Nascimento foram improvisadas em vários momentos para captar naturalidade.',
+      'O conflito conjugal de Nascimento foi baseado em relatos reais de policiais do BOPE sobre a pressão sobre suas famílias.',
+      'Maria Ribeiro e Wagner Moura já haviam trabalhado juntos antes de Tropa de Elite.',
+    ],
+    relationships: [
+      {
+        character: 'Capitão Nascimento',
+        characterSlug: 'capitao-nascimento',
+        type: 'Esposo',
+        description:
+          'O casamento com Nascimento está sob pressão extrema. Rosane ama o marido mas não aceita perdê-lo para o BOPE.',
+      },
+    ],
+    films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
+    imageUrl: '/images/characters/rosane.jpg',
+    imageAlt: 'Rosane interpretada por Maria Ribeiro em Tropa de Elite',
+  },
+  {
     id: 'baiano',
     name: 'Baiano',
-    actor: 'Tainá Müller',
+    actor: 'Fernanda de Freitas',
     actorSlug: 'baiano-ator',
     nickname: 'Baiano',
-    role: 'Antagonista',
+    role: 'Antagonista principal',
+    category: 'antagonista',
     shortBio:
       'Traficante que comanda o morro e representa a face visível do crime organizado nas favelas retratadas no filme.',
     fullBio: `Baiano é o chefe do tráfico de drogas na favela retratada em Tropa de Elite. Cruel, astuto e territorialista, ele representa a face mais visível do crime organizado que o BOPE tenta combater.
@@ -341,7 +486,8 @@ O personagem também é importante porque representa milhares de jovens reais qu
     actor: 'Milhem Cortaz',
     actorSlug: 'milhem-cortaz',
     rank: 'Capitão',
-    role: 'Coadjuvante',
+    role: 'Coadjuvante — braço direito de Nascimento',
+    category: 'coadjuvante',
     shortBio:
       'Oficial do BOPE que serve como braço direito de Nascimento. Fábio é um soldado dedicado que compartilha a visão implacável do capitão sobre o combate ao crime.',
     fullBio: `O Capitão Fábio é um oficial experiente do BOPE que opera ao lado do Capitão Nascimento nas operações mais perigosas. Disciplinado e leal, Fábio encarna o espírito de corpo do batalhão e segue as ordens de Nascimento com precisão militar.

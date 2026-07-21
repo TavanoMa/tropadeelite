@@ -7,7 +7,7 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/shared/motio
 import { characters } from '@/data/characters'
 
 export function HomeCharacters() {
-  const mainCharacters = characters.slice(0, 4)
+  const mainCharacters = characters.filter((c) => c.category === 'protagonista')
 
   return (
     <section className="py-20 lg:py-32">
