@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { Skull, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { ArrowRight } from 'lucide-react'
 import { SectionHeader } from '@/components/shared/section-header'
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/shared/motion-wrapper'
 import { characters } from '@/data/characters'
@@ -24,8 +25,14 @@ export function HomeCharacters() {
             <StaggerItem key={character.id}>
               <Link href={`/personagens/${character.id}`} className="group block">
                 <div className="rounded-xl border border-white/5 bg-zinc-900/50 overflow-hidden transition-all duration-300 hover:border-olive-700/30 hover:bg-zinc-900/80 group-hover:-translate-y-1">
-                  <div className="aspect-[3/4] bg-gradient-to-br from-olive-900/30 to-zinc-900 flex items-center justify-center relative">
-                    <Skull className="h-16 w-16 text-olive-700/30" />
+                  <div className="aspect-[3/4] bg-gradient-to-br from-olive-900/30 to-zinc-900 relative overflow-hidden">
+                    <Image
+                      src={character.imageUrl}
+                      alt={character.imageAlt}
+                      fill
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent" />
                     <div className="absolute bottom-4 left-4 right-4">
                       <p className="text-xs text-olive-400 font-medium uppercase tracking-wider">

@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ChevronDown, Skull } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 
 export function Hero() {
   return (
@@ -20,7 +21,14 @@ export function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="mb-8"
         >
-          <Skull className="h-16 w-16 sm:h-20 sm:w-20 text-olive-500/60 mx-auto" />
+          <Image
+            src="/logo.png"
+            alt="Logo BOPE - Tropa de Elite"
+            width={180}
+            height={180}
+            className="mx-auto drop-shadow-[0_0_40px_rgba(101,117,60,0.5)]"
+            priority
+          />
         </motion.div>
 
         <motion.h1

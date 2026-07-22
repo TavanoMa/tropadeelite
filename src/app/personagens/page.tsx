@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Skull, ArrowRight, Shield, Users, Crosshair } from 'lucide-react'
+import Image from 'next/image'
+import { ArrowRight, Shield, Users, Crosshair } from 'lucide-react'
 import { Breadcrumb } from '@/components/shared/breadcrumb'
 import { SectionHeader } from '@/components/shared/section-header'
 import { characters } from '@/data/characters'
@@ -63,8 +64,14 @@ function CharacterCard({ character }: { character: Character }) {
   return (
     <Link href={`/personagens/${character.id}`} className="group block">
       <article className="rounded-xl border border-white/5 bg-zinc-900/50 overflow-hidden transition-all duration-300 hover:border-olive-700/30 hover:bg-zinc-900/80 group-hover:-translate-y-1 h-full flex flex-col">
-        <div className="aspect-[4/3] bg-gradient-to-br from-olive-900/30 to-zinc-900 flex items-center justify-center relative">
-          <Skull className="h-20 w-20 text-olive-700/20" />
+        <div className="aspect-[4/3] bg-gradient-to-br from-olive-900/30 to-zinc-900 relative overflow-hidden">
+          <Image
+            src={character.imageUrl}
+            alt={character.imageAlt}
+            fill
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent" />
           <div className="absolute top-4 right-4">
             <span

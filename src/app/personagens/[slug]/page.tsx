@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Quote, Lightbulb, Users, Film } from 'lucide-react'
 import { Breadcrumb } from '@/components/shared/breadcrumb'
 import { SectionHeader } from '@/components/shared/section-header'
@@ -70,37 +71,53 @@ export default async function CharacterPage({ params }: Props) {
         />
 
         <header className="mb-12">
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            {character.rank && (
-              <span className="px-3 py-1 text-xs rounded-full bg-olive-900/40 text-olive-300 border border-olive-800/30 uppercase tracking-wider font-medium">
-                {character.rank}
-              </span>
-            )}
-            <span className="px-3 py-1 text-xs rounded-full bg-zinc-800 text-zinc-400 border border-white/5">
-              {character.role}
-            </span>
-          </div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tighter">
-            {character.name}
-          </h1>
-          <p className="mt-3 text-lg text-zinc-400">
-            Interpretado por{' '}
-            <Link
-              href={`/atores/${character.actorSlug}`}
-              className="text-olive-400 hover:text-olive-300 transition-colors underline underline-offset-4"
-            >
-              {character.actor}
-            </Link>
-          </p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {character.traits.map((trait) => (
-              <span
-                key={trait}
-                className="px-3 py-1 text-xs rounded-full bg-zinc-800/80 text-zinc-300 border border-white/5"
-              >
-                {trait}
-              </span>
-            ))}
+          <div className="flex flex-col sm:flex-row gap-8 items-start">
+            <div className="w-full sm:w-48 md:w-56 shrink-0">
+              <div className="aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10">
+                <Image
+                  src={character.imageUrl}
+                  alt={character.imageAlt}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 100vw, 224px"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                {character.rank && (
+                  <span className="px-3 py-1 text-xs rounded-full bg-olive-900/40 text-olive-300 border border-olive-800/30 uppercase tracking-wider font-medium">
+                    {character.rank}
+                  </span>
+                )}
+                <span className="px-3 py-1 text-xs rounded-full bg-zinc-800 text-zinc-400 border border-white/5">
+                  {character.role}
+                </span>
+              </div>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tighter">
+                {character.name}
+              </h1>
+              <p className="mt-3 text-lg text-zinc-400">
+                Interpretado por{' '}
+                <Link
+                  href={`/atores/${character.actorSlug}`}
+                  className="text-olive-400 hover:text-olive-300 transition-colors underline underline-offset-4"
+                >
+                  {character.actor}
+                </Link>
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {character.traits.map((trait) => (
+                  <span
+                    key={trait}
+                    className="px-3 py-1 text-xs rounded-full bg-zinc-800/80 text-zinc-300 border border-white/5"
+                  >
+                    {trait}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </header>
 

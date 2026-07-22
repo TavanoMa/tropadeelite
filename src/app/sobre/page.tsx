@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Skull } from 'lucide-react'
+import Image from 'next/image'
 import { Breadcrumb } from '@/components/shared/breadcrumb'
 import { SectionHeader } from '@/components/shared/section-header'
 
@@ -26,7 +26,13 @@ export default function AboutPage() {
 
         <div className="pb-20 space-y-8">
           <div className="flex justify-center mb-8">
-            <Skull className="h-20 w-20 text-olive-500/40" />
+            <Image
+              src="/logo.png"
+              alt="Logo BOPE - Tropa de Elite"
+              width={140}
+              height={140}
+              className="opacity-40"
+            />
           </div>
 
           <div className="prose prose-invert prose-zinc max-w-none space-y-6">

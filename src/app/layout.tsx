@@ -82,6 +82,10 @@ export const metadata: Metadata = {
       'O maior portal brasileiro dedicado ao filme Tropa de Elite. Personagens, frases, curiosidades, quiz e muito mais.',
     images: ['/images/og-image.jpg'],
   },
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   alternates: {
     canonical: 'https://tropadeelite.com.br',
     types: {

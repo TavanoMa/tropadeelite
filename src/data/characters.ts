@@ -105,7 +105,7 @@ Nascimento também é importante por desafiar o maniqueísmo. Ele não é herói
       },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
-    imageUrl: '/images/characters/capitao-nascimento.jpg',
+    imageUrl: '/capitao-nascimento.jfif',
     imageAlt: 'Capitão Nascimento interpretado por Wagner Moura em Tropa de Elite',
   },
   {
@@ -194,7 +194,7 @@ O personagem é fundamental para dar ao filme sua dimensão intelectual e filos�
       },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
-    imageUrl: '/images/characters/matias.jpg',
+    imageUrl: '/matias.jpg',
     imageAlt: 'André Matias interpretado por André Ramiro em Tropa de Elite',
   },
   {
@@ -285,7 +285,7 @@ Caio Junqueira, que interpretou Neto, faleceu em 2019 em um acidente de carro no
       },
     ],
     films: ['Tropa de Elite (2007)'],
-    imageUrl: '/images/characters/neto.jpg',
+    imageUrl: '/neto.jpeg',
     imageAlt: 'Neto interpretado por Caio Junqueira em Tropa de Elite',
   },
   {
@@ -354,7 +354,7 @@ Fernanda Machado trouxe ao papel uma sensibilidade que torna Maria memorável ap
       },
     ],
     films: ['Tropa de Elite (2007)'],
-    imageUrl: '/images/characters/maria.jpg',
+    imageUrl: '/maria.jpg',
     imageAlt: 'Maria interpretada por Fernanda Machado em Tropa de Elite',
   },
   {
@@ -412,7 +412,7 @@ Maria Ribeiro, uma das atrizes mais talentosas de sua geração, trouxe ao papel
       },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
-    imageUrl: '/images/characters/rosane.jpg',
+    imageUrl: '/rosane.jfif',
     imageAlt: 'Rosane interpretada por Maria Ribeiro em Tropa de Elite',
   },
   {
@@ -477,7 +477,7 @@ O personagem também é importante porque representa milhares de jovens reais qu
       },
     ],
     films: ['Tropa de Elite (2007)'],
-    imageUrl: '/images/characters/baiano.jpg',
+    imageUrl: '/baiano.jpg',
     imageAlt: 'Baiano em cena de Tropa de Elite',
   },
   {
@@ -538,7 +538,7 @@ O personagem também humaniza a estrutura do BOPE ao mostrar a camaradagem e a l
       },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
-    imageUrl: '/images/characters/fabio.jpg',
+    imageUrl: '/fabio.jpg',
     imageAlt: 'Capitão Fábio interpretado por Milhem Cortaz em Tropa de Elite',
   },
 ]

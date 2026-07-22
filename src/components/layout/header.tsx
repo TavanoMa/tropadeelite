@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Search, Skull } from 'lucide-react'
+import { Menu, X, Search } from 'lucide-react'
 
 const navLinks = [
   { href: '/resumo', label: 'Resumo' },
@@ -24,7 +25,13 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <Skull className="h-7 w-7 text-olive-400 transition-colors group-hover:text-burnt-500" />
+            <Image
+              src="/logo.png"
+              alt="Logo BOPE - Tropa de Elite"
+              width={44}
+              height={44}
+              className="transition-transform group-hover:scale-110"
+            />
             <span className="font-display text-lg font-bold tracking-wide uppercase">
               Tropa de Elite
             </span>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Skull } from 'lucide-react'
+import Image from 'next/image'
 import { Breadcrumb } from '@/components/shared/breadcrumb'
 import { SectionHeader } from '@/components/shared/section-header'
 
@@ -53,7 +53,13 @@ export default function GalleryPage() {
                 className="mb-4 break-inside-avoid rounded-xl border border-white/5 bg-zinc-900/50 overflow-hidden group cursor-pointer"
               >
                 <div className={`${height} bg-gradient-to-br from-olive-900/20 to-zinc-900 flex items-center justify-center relative`}>
-                  <Skull className="h-12 w-12 text-olive-800/20 group-hover:text-olive-700/30 transition-colors" />
+                  <Image
+                    src="/logo.png"
+                    alt="Placeholder"
+                    width={72}
+                    height={72}
+                    className="opacity-20 group-hover:opacity-30 transition-opacity"
+                  />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                   <span className="absolute bottom-3 left-3 text-xs text-zinc-500 bg-black/40 px-2 py-1 rounded-md">
                     {category}

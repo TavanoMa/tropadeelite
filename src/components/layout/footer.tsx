@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Skull } from 'lucide-react'
+import Image from 'next/image'
 
 const footerLinks = {
   'Sobre o Filme': [
@@ -31,7 +31,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Skull className="h-6 w-6 text-olive-400" />
+              <Image
+                src="/logo.png"
+                alt="Logo BOPE - Tropa de Elite"
+                width={40}
+                height={40}
+              />
               <span className="font-display text-lg font-bold tracking-wide uppercase">
                 Tropa de Elite
               </span>

@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { RotateCcw, Share2, Skull } from 'lucide-react'
+import Image from 'next/image'
+import { RotateCcw, Share2 } from 'lucide-react'
 import { personalityQuestions, personalityResults } from '@/data/quiz'
 
 export function PersonalityTest() {
@@ -57,7 +58,13 @@ export function PersonalityTest() {
           animate={{ opacity: 1, scale: 1 }}
           className="rounded-2xl border border-white/5 bg-zinc-900/50 p-8 text-center"
         >
-          <Skull className="h-20 w-20 text-olive-500 mx-auto mb-6" />
+          <Image
+            src="/logo.png"
+            alt="Logo BOPE"
+            width={140}
+            height={140}
+            className="mx-auto mb-6"
+          />
           <p className="text-xs text-olive-400 uppercase tracking-widest font-medium mb-2">
             Seu resultado
           </p>
