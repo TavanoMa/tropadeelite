@@ -105,7 +105,7 @@ Nascimento também é importante por desafiar o maniqueísmo. Ele não é herói
       },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
-    imageUrl: '/capitao-nascimento.jfif',
+    imageUrl: '/capitao-nascimento.png',
     imageAlt: 'Capitão Nascimento interpretado por Wagner Moura em Tropa de Elite',
   },
   {
@@ -412,7 +412,7 @@ Maria Ribeiro, uma das atrizes mais talentosas de sua geração, trouxe ao papel
       },
     ],
     films: ['Tropa de Elite (2007)', 'Tropa de Elite 2: O Inimigo Agora é Outro (2010)'],
-    imageUrl: '/rosane.jfif',
+    imageUrl: '/rosane.jpeg',
     imageAlt: 'Rosane interpretada por Maria Ribeiro em Tropa de Elite',
   },
   {
